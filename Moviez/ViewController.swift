@@ -62,16 +62,22 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let movie = movies[indexPath.row]
+        
+        performSegueWithIdentifier("SendDataSegue", sender: movie)
+        
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 
             if segue.identifier == "SendDataSegue" {
                 
                 let destination = segue.destinationViewController as? MovieDescriptionVC
-                let movieIndex = tableView.indexPathForSelectedRow?.row
-                let movieCell = tableView.cellForRowAtIndexPath(movieIndex)
+                if let transfer = sender as? Movies {
+                    destination?.movie = transfer
+                }
                 
-                
-
         }
         
     }

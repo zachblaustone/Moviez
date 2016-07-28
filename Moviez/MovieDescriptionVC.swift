@@ -23,22 +23,21 @@ class MovieDescriptionVC: UIViewController {
     var viaSegueMovieImg: UIImage!
     
     
+    var movie: Movies!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        movieDesc.text = viaSegueDescMovie
-        movieTitle.text = viaSegueTitleMovie
-        imdbPlot.text = viaSeguePlotImdb
-        imdbLink.text = viaSegueLinkImdb
-        movieImg.image = viaSegueMovieImg
-        
+        print(movie.title)
     }
     
     override func viewDidAppear(animated: Bool) {
 
         
     }
+    
     
     
     func passToMovieDesc(sender: MovieCell!) {
