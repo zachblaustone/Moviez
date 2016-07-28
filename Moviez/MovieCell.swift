@@ -16,31 +16,14 @@ class MovieCell: UITableViewCell {
     @IBOutlet weak var movieDesc: UILabel!
     @IBOutlet weak var imdbPlot: UILabel!
     
-//    var viaSegueCellDescMovie = ""
-//    var viaSegueCellTitleMovie = ""
-//    var viaSegueCellPlotImdb = ""
-//    var viaSegueCellLinkImdb = ""
-//    var viaSegueCellMovieImg: UIImage!
-//    
-    
-    
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-//        movieTitle.text = viaSegueCellTitleMovie
-//        movieImg.image = viaSegueCellMovieImg
-//        imdbLbl.text = viaSegueCellLinkImdb
-//        movieDesc.text = viaSegueCellDescMovie
-//        imdbPlot.text = viaSegueCellPlotImdb
+
         
         movieImg.layer.cornerRadius = movieImg.frame.size.width / 2
         movieImg.clipsToBounds = true
     }
-    
-
-    
-    
     
     func configureCell(movie: Movies) {
         movieTitle.text = movie.title
@@ -49,7 +32,5 @@ class MovieCell: UITableViewCell {
         movieDesc.text = movie.moviedescription
         imdbPlot.text = movie.imdbplot
     }
-    
-    
     
 }

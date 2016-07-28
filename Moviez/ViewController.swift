@@ -74,8 +74,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             if segue.identifier == "SendDataSegue" {
                 
                 let destination = segue.destinationViewController as? MovieDescriptionVC
-                if let transfer = sender as? Movies {
-                    destination?.movie = transfer
+                if let movie = sender as? Movies {
+                    destination?.movie = movie
                 }
                 
         }

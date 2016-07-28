@@ -268,6 +268,7 @@
                             <constraint firstItem="8JA-JW-aKd" firstAttribute="leading" secondItem="qE4-q1-6NU" secondAttribute="leadingMargin" id="z9V-BC-Iv6"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="KYO-RZ-aMB"/>
                     <connections>
                         <outlet property="imdbLink" destination="Cwu-hF-AFW" id="aKB-6m-1RW"/>
                         <outlet property="imdbPlot" destination="9qZ-bg-o59" id="rko-ia-ZIR"/>
