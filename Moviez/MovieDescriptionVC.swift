@@ -28,14 +28,21 @@ class MovieDescriptionVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        movieDesc.text = movie.moviedescription
-        movieTitle.text = movie.title
+        updateUI()
         
     }
     
     override func viewDidAppear(animated: Bool) {
 
         
+    }
+    
+    func updateUI() {
+        movieDesc.text = movie.moviedescription
+        movieTitle.text = movie.title
+        imdbPlot.text = movie.imdbplot
+        imdbLink.text = movie.imdblink
+        movieImg.image = movie.getMovieImg()
     }
     
 }

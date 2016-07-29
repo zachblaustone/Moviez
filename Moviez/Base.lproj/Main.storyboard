@@ -102,7 +102,6 @@
                                             <outlet property="movieDesc" destination="6A6-hV-d39" id="Lc4-jY-WuV"/>
                                             <outlet property="movieImg" destination="1fK-S5-t71" id="ahX-St-qW8"/>
                                             <outlet property="movieTitle" destination="JaO-1w-KNM" id="REm-8p-DHU"/>
-                                            <segue destination="6xD-O9-ZCd" kind="show" id="UzB-Sh-4V8"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -442,6 +441,5 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Qx5-mF-ZZ2"/>
-        <segue reference="UzB-Sh-4V8"/>
     </inferredMetricsTieBreakers>
 </document>

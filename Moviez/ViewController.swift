@@ -70,14 +70,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-
-            if segue.identifier == "SendDataSegue" {
-                
-                let destination = segue.destinationViewController as? MovieDescriptionVC
+        
+        if segue.identifier == "SendDataSegue" {
+            
+            if let destination = segue.destinationViewController as? MovieDescriptionVC {
                 if let movie = sender as? Movies {
-                    destination?.movie = movie
+                    destination.movie = movie
                 }
-                
+            }
+            
         }
         
     }
@@ -88,10 +89,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return movies.count
-    }
-    
-    @IBAction func cellImgPressed(sender: AnyObject!) {
-//        performSegueWithIdentifier("goToDescVC", sender: nil)
     }
     
 }

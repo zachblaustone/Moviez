@@ -16,7 +16,7 @@ class AddMovieVC: UIViewController, UINavigationControllerDelegate, UIImagePicke
     @IBOutlet weak var imdbMovieLink: UITextField!
     @IBOutlet weak var imdbMoviePlot: UITextField!
     @IBOutlet weak var movieImg: UIImageView!
-    @IBOutlet weak var addMovieBtn: UIButton!
+
     
     var imagePicker: UIImagePickerController!
 
